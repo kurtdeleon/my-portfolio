@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  background-color: $color-secondary;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  //main container of logo and links
+  div {
+    max-width: 1056px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    img {
+      height: 32px;
+      width: auto;
+      @include media("<tablet") {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: $font-size-default;
+      font-weight: bold;
+      color: $color-text-highlight;
+      transition: 0.15s ease;
+      &:hover {
+        filter: brightness(75%);
+      }
+    }
+
+    height: 56px;
+    @include media(">=tablet") {
+      height: 64px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      a {
+        margin-left: 48px;
+      }
+      @include media("<tablet") {
+        width: 80%;
+        min-width: 280px;
+        margin: 0;
+        a {
+          margin: 0;
+          &:first-child {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+}

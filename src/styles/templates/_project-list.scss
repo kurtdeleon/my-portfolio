@@ -1,0 +1,16 @@
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  @include media(">=desktop") {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
+  grid-gap: 56px 32px;
+  grid-auto-rows: auto;
+}
+
+#project-list-wrapper {
+  h2 {
+    color: $color-text-highlight;
+    margin-bottom: 32px;
+  }
+}

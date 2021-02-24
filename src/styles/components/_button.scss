@@ -1,0 +1,42 @@
+.button {
+  border-radius: 3px;
+  display: inline-block;
+  width: 100%;
+  transition: 0.15s ease;
+  box-sizing: border-box;
+
+  font-weight: bold;
+  font-size: $font-size-default;
+  text-decoration: none;
+  text-align: center;
+
+  &--filled {
+    background: $color-primary;
+    color: $color-white;
+    &:hover {
+      background: $color-primary-hover;
+    }
+  }
+  &--ghost {
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    color: $color-primary;
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+
+  //button jumps up when clicked
+  &:active {
+    transform: translateY(-6px);
+  }
+
+  //mobile
+  padding: 12px 0;
+
+  //tablet+
+  @include media(">=tablet") {
+    padding: 16px 0;
+  }
+}

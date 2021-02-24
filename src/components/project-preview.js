@@ -1,9 +1,10 @@
 import React from "react";
 import TagList from "./tag-list";
 import Button from "../components/button";
+import Image from "./image";
 
 const ProjectPreview = props => {
-  const { id, headerImg, title, tags, summary } = props;
+  const { id, title, tags, summary } = props;
   const callToAction = {
     text: "Tell me more",
     url: `/project/${id}`,
@@ -12,8 +13,8 @@ const ProjectPreview = props => {
   };
 
   return (
-    <div>
-      <img src={headerImg} alt={title} />
+    <div className="project-preview">
+      <Image filename={`${id}/header.jpg`} alt={title} />
       <h3>{title}</h3>
       <TagList tags={tags} />
       <p>{summary}</p>

@@ -1,0 +1,72 @@
+.view-project {
+  .project-summary {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+
+    //header image
+    img {
+      margin-bottom: 20px;
+    }
+
+    //main title
+    h2 {
+      font-weight: bold;
+      font-size: $font-size-big;
+      margin-top: 20px;
+    }
+
+    //subtitle
+    h3 {
+      margin-top: 6px;
+      font-weight: medium;
+      opacity: 65%;
+    }
+    .info-list,
+    p {
+      font-size: $font-size-default-article;
+      line-height: get-line-height($font-size-default-article);
+    }
+    p {
+      padding: 8px 0;
+    }
+    .action-buttons,
+    .info-list-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+    }
+    .info-list-wrapper {
+      margin-bottom: 32px;
+    }
+    .action-buttons {
+      @media only screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+  .chapters {
+    padding-bottom: 56px;
+    section {
+      font-size: $font-size-default-article;
+      line-height: get-line-height($font-size-default-article);
+      h4 {
+        text-align: center;
+        padding-bottom: 16px;
+        font-size: $font-size-medium;
+        line-height: get-line-height($font-size-medium);
+      }
+      .section-image {
+        margin: 48px 0;
+      }
+
+      //mobile
+      margin-top: 40px;
+
+      //tablet+
+      @include media(">=tablet") {
+        margin-top: 80px;
+      }
+    }
+  }
+}

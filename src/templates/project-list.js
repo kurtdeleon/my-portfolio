@@ -3,9 +3,9 @@ import ProjectPreview from "../components/project-preview";
 
 const ProjectList = ({ pageContext: { projects } }) => {
   return (
-    <div className="project-list" style={{ color: `teal` }}>
-      <h1>Projects</h1>
-      <div>
+    <div id="project-list-wrapper">
+      <h2>Projects</h2>
+      <div className="project-list">
         {projects.map(details => (
           <ProjectPreview {...details} />
         ))}

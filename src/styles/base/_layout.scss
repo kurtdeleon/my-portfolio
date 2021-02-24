@@ -4,12 +4,38 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: $color-white;
+}
+
+#content-wrapper {
+  margin: 32px auto 64px auto;
+  @include media(">=tablet") {
+    margin: 64px auto;
+  }
+  max-width: 1056px;
+  width: 90%;
 }
 
 header {
   position: sticky;
+  top: 0;
+  left: 0;
 }
 
 footer {
   margin-top: auto;
+}
+
+//all links in text form
+.link {
+  color: $color-text-highlight;
+  transition: 0.15s ease;
+  font-weight: bold;
+  text-decoration: none;
+  &:visited {
+    color: $color-text-highlight;
+  }
+  &:hover {
+    color: $color-text-highlight-hover;
+  }
 }

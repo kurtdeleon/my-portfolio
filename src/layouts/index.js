@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
 import { headData } from "../data/data";
+import "normalize.css";
 import "../styles/main.scss";
 
 const Layout = ({ children }) => {
@@ -18,7 +19,7 @@ const Layout = ({ children }) => {
         <meta name="viewport" content={meta.viewport} />
       </Helmet>
       <Header />
-      {children}
+      <div id="content-wrapper">{children}</div>
       <Footer />
     </div>
   );

@@ -1,0 +1,15 @@
+#social-media-links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 20px;
+  width: 140px;
+  align-content: center;
+  a > img {
+    height: 20px;
+    width: 20px;
+    transition: 0.15s ease;
+    &:hover {
+      filter: brightness(75%);
+    }
+  }
+}

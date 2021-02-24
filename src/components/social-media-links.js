@@ -9,7 +9,7 @@ const icons = Object.freeze({ Github, LinkedIn, Email, Facebook });
 
 const SocialMediaLinks = () => {
   return (
-    <nav>
+    <nav id="social-media-links">
       {socialMediaData.map(link => (
         <a key={link.title} href={link.url} target="_blank" rel="noreferrer">
           <img src={icons[link.title]} alt={link.title} />

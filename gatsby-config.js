@@ -6,7 +6,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        path: `${__dirname}/src/images/`,
       },
     },
     {
@@ -20,5 +20,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 };

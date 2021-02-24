@@ -1,22 +1,33 @@
 import React from "react";
+import Image from "./image";
 
 const Section = props => {
-  const { title, body } = props;
+  const { id, title, body } = props;
   const renderSectionBody = (section, idx) => {
     if (section.tag === "p") {
-      return <p key={`${title}-${idx}`}>{section.content}</p>;
+      return (
+        <p
+          key={`${title}-${idx}`}
+          dangerouslySetInnerHTML={{ __html: section.content }}
+        />
+      );
     } else if (section.tag === "img") {
       return (
-        <img key={`${title}-${idx}`} src={section.content} alt={section.alt} />
+        <Image
+          className="section-image"
+          key={`${title}-${idx}`}
+          alt={section.alt}
+          filename={`${id}/${section.content}`}
+        />
       );
     }
   };
 
   return (
-    <div>
+    <section>
       <h4>{title}</h4>
       {body.map(renderSectionBody)}
-    </div>
+    </section>
   );
 };
 

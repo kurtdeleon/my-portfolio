@@ -1,0 +1,25 @@
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  img {
+    border-radius: 3px;
+    margin-bottom: 12px;
+    height: auto;
+    width: 100%;
+  }
+  h3 {
+    color: $color-text-primary;
+    font-size: $font-size-medium;
+    font-weight: medium;
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+  .button {
+    margin-top: auto;
+  }
+  p {
+    font-size: $font-size-default;
+    line-height: get-line-height($font-size-default);
+    opacity: 0.9;
+  }
+}

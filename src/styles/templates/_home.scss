@@ -1,0 +1,129 @@
+#introduction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  &--content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    h2 {
+      color: $color-text-highlight;
+      @include media("<tablet") {
+        text-align: center;
+      }
+    }
+    #summary {
+      p {
+        font-size: $font-size-default;
+        line-height: get-line-height($font-size-default);
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  flex-direction: column;
+  @include media(">=tablet") {
+    flex-direction: row;
+  }
+
+  &--picture {
+    overflow: hidden;
+    // display: flex;
+    // justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    //mobile
+    width: 100%;
+    .picture-desktop {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+    .picture-mobile {
+      height: 100%;
+      width: auto;
+    }
+    //tablet
+    @include media(">=tablet") {
+      width: 35%;
+      max-height: 560px;
+      max-width: 400px;
+      margin-right: 5%;
+      margin-bottom: 0;
+      .picture-mobile {
+        display: none;
+      }
+      .picture-desktop {
+        display: block;
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+    @include media(">=tablet") {
+      max-width: 380px;
+    }
+  }
+}
+
+#selected-projects {
+  &--header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    a {
+      margin-left: auto;
+      text-decoration: none;
+      opacity: 0.75;
+      color: $color-text-primary;
+      transition: 0.15s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    h2 {
+      color: $color-text-highlight;
+    }
+  }
+}
+
+/* 
+  Credits to: 
+    https://jarv.is/notes/css-waving-hand-emoji/ 
+  for the original idea
+*/
+.waving-hand {
+  animation: wave 6.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(14deg);
+  }
+  10% {
+    transform: rotate(-8deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
