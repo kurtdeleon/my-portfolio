@@ -4,6 +4,7 @@ import ProjectPreview from "../components/project-preview";
 import Button from "../components/button";
 import { introData } from "../data/data";
 import Image from "../components/image";
+// import Resume from "./KurtdeLeon_Resume.pdf";
 
 const Home = ({ pageContext: { selectedProjects } }) => {
   const { pictureMobile, pictureDesktop, greeting, summary, cta } = introData;

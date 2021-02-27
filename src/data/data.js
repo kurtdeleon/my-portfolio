@@ -19,7 +19,7 @@ export const introData = {
     `If you're interested in working with me, send me a message over at <a class="link" href="https://ph.linkedin.com/in/kurtdeleon" target="_blank" rel="noreferrer">LinkedIn</a>. You could also send me an <a class="link" href="mailto:deleon.ksa@gmail.com" target="_blank" rel="noreferrer">email</a>, if you'd prefer that.`,
   ],
   cta: {
-    url: "https://www.youtube.com/",
+    url: "KurtdeLeon_Resume.pdf",
     text: "View Resume",
   },
 };
