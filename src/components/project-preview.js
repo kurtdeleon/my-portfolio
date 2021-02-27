@@ -9,6 +9,7 @@ const ProjectPreview = props => {
     text: "Tell me more",
     url: `/project/${id}`,
     type: "ghost",
+    size: "small",
     newTab: false,
   };
 

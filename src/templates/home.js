@@ -32,7 +32,7 @@ const Home = ({ pageContext: { selectedProjects } }) => {
               />
             ))}
           </div>
-          <Button {...cta} type="filled" newTab={true} />
+          <Button {...cta} type="filled" size="regular" newTab={true} />
         </div>
       </section>
       <section id="selected-projects">

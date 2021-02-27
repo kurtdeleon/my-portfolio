@@ -28,14 +28,14 @@ footer {
 
 //all links in text form
 .link {
-  color: $color-text-highlight;
+  color: $color-primary;
   transition: 0.15s ease;
   font-weight: bold;
   text-decoration: none;
   &:visited {
-    color: $color-text-highlight;
+    color: $color-primary;
   }
   &:hover {
-    color: $color-text-highlight-hover;
+    color: get-hover-color($color-primary);
   }
 }

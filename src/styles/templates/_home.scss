@@ -7,7 +7,8 @@
     flex-direction: column;
     flex: 1 0;
     h2 {
-      color: $color-text-highlight;
+      color: $color-primary;
+      font-weight: 500;
       @include media("<tablet") {
         text-align: center;
       }
@@ -29,10 +30,9 @@
 
   &--picture {
     overflow: hidden;
-    // display: flex;
-    // justify-content: center;
     border-radius: 3px;
     margin-bottom: 24px;
+
     //mobile
     width: 100%;
     .picture-desktop {
@@ -44,6 +44,7 @@
       height: 100%;
       width: auto;
     }
+
     //tablet
     @include media(">=tablet") {
       width: 35%;
@@ -77,15 +78,16 @@
     a {
       margin-left: auto;
       text-decoration: none;
-      opacity: 0.75;
+      opacity: 0.5;
       color: $color-text-primary;
+      font-weight: 500;
       transition: 0.15s ease;
       &:hover {
         opacity: 1;
       }
     }
     h2 {
-      color: $color-text-highlight;
+      color: $color-text-primary;
     }
   }
 }

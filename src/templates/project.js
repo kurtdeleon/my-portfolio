@@ -5,9 +5,10 @@ import Button from "../components/button";
 import Image from "../components/image";
 
 const backToProjectListData = {
-  type: "filled",
   text: "Explore more projects",
   url: "/project-list",
+  type: "filled",
+  size: "regular",
   newTab: false,
 };
 
@@ -35,6 +36,7 @@ const Project = ({ pageContext: { project } }) => {
                 key={action.text}
                 {...action}
                 type="ghost"
+                size="regular"
                 newTab="true"
               />
             ))}

@@ -8,7 +8,15 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <SocialMediaLinks /> <span onClick={scrollToTop}>Back to Top</span>
+        <SocialMediaLinks />{" "}
+        <span
+          role="button"
+          tabIndex={0}
+          onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+        >
+          Back to Top
+        </span>
       </div>
     </footer>
   );

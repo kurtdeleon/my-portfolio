@@ -1,6 +1,7 @@
 header {
   width: 100%;
-  background-color: $color-secondary;
+  background-color: white;
+  box-shadow: 0 -7px 7px 10px rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -27,17 +28,6 @@ header {
       }
     }
 
-    a {
-      text-decoration: none;
-      font-size: $font-size-default;
-      font-weight: bold;
-      color: $color-text-highlight;
-      transition: 0.15s ease;
-      &:hover {
-        filter: brightness(75%);
-      }
-    }
-
     height: 56px;
     @include media(">=tablet") {
       height: 64px;
@@ -49,6 +39,16 @@ header {
       margin-left: auto;
       a {
         margin-left: 48px;
+        text-decoration: none;
+        font-size: $font-size-default;
+        color: $color-text-primary;
+        opacity: 0.7;
+        transition: 0.15s ease;
+        &:hover {
+          color: $color-primary;
+          opacity: 1;
+          filter: brightness(75%);
+        }
       }
       @include media("<tablet") {
         width: 80%;

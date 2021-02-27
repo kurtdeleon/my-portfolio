@@ -1,19 +1,23 @@
 @use "sass:color";
 
-$color-primary: #5c8d89; //buttons
-$color-primary-hover: color.adjust($color-primary, $lightness: -12.5%);
-$color-secondary: #c8e6dc; //backgrounds of solid components
-$color-secondary-hover: color.adjust($color-secondary, $lightness: -12.5%);
+$color-primary: #3763a3; //buttons
 $color-text-primary: #2e2e2e; //bodies of text
-$color-text-highlight: #496f6c; //headers and titles
-$color-text-highlight-hover: color.adjust(
-  $color-text-highlight,
-  $lightness: -12.5%
-);
-$color-white: #f4f4f4; //background
+$color-white: #fafafa; //background
+$color-tag: #d9d9d9;
 
 $font-size-small: 0.85rem;
 $font-size-default: 1rem;
 $font-size-default-article: 1.15rem; //used for long paragraphs/articles
 $font-size-medium: 1.3rem;
 $font-size-big: 1.85rem;
+
+@function get-hover-color($font-color) {
+  @return color.adjust($font-color, $lightness: -12.5%);
+}
+
+/* Previous color palette for archiving */
+// $color-primary: #5c8d89; //buttons
+// $color-secondary: #c8e6dc; //backgrounds of solid components
+// $color-text-primary: #2e2e2e; //bodies of text
+// $color-text-highlight: #496f6c; //headers and titles
+// $color-white: #f4f4f4; //background

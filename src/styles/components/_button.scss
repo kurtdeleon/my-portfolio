@@ -14,29 +14,38 @@
     background: $color-primary;
     color: $color-white;
     &:hover {
-      background: $color-primary-hover;
+      background: get-hover-color($color-primary);
     }
   }
   &--ghost {
-    border: 2px solid $color-primary;
+    border: 1px solid $color-primary;
     background-color: transparent;
     color: $color-primary;
+    font-weight: 300;
     &:hover {
       color: $color-white;
       background-color: $color-primary;
+    }
+  }
+  &--regular {
+    //mobile
+    padding: 12px 0;
+    //tablet+
+    @include media(">=tablet") {
+      padding: 16px 0;
+    }
+  }
+  &--small {
+    //mobile
+    padding: 8px 0;
+    //tablet+
+    @include media(">=tablet") {
+      padding: 12px 0;
     }
   }
 
   //button jumps up when clicked
   &:active {
     transform: translateY(-6px);
-  }
-
-  //mobile
-  padding: 12px 0;
-
-  //tablet+
-  @include media(">=tablet") {
-    padding: 16px 0;
   }
 }
