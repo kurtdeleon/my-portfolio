@@ -6,8 +6,8 @@ const ProjectList = ({ pageContext: { projects } }) => {
     <div id="project-list-wrapper">
       <h2>Projects</h2>
       <div className="project-list">
-        {projects.map(details => (
-          <ProjectPreview {...details} />
+        {projects.map((details, idx) => (
+          <ProjectPreview key={`pp-${idx}`} {...details} />
         ))}
       </div>
     </div>

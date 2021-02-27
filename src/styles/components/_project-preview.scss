@@ -15,11 +15,12 @@
     margin-top: 12px;
   }
   .button {
-    margin-top: 8px;
+    margin-top: auto;
   }
   p {
     font-size: $font-size-default;
     line-height: get-line-height($font-size-default);
     opacity: 0.9;
+    padding-bottom: 8px;
   }
 }
