@@ -8,12 +8,16 @@ body {
 }
 
 #content-wrapper {
-  margin: 32px auto 64px auto;
+  margin: 32px auto;
   @include media(">=tablet") {
     margin: 64px auto;
   }
   max-width: 1056px;
   width: 90%;
+  min-height: calc(100vh - 176px);
+  @include media(">=tablet") {
+    min-height: calc(100vh - 256px);
+  }
 }
 
 header {

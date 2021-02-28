@@ -1,0 +1,43 @@
+#fourohfour-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  @include media("<tablet") {
+    width: 90%;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media("<tablet") {
+      flex-direction: column;
+    }
+    #image-container {
+      width: 300px;
+      max-height: 200px;
+    }
+    #text-container {
+      margin-top: 16px;
+      color: $color-text-primary;
+      text-align: center;
+      line-height: get-line-height($font-size-default);
+      h2 {
+        color: $color-primary;
+      }
+      a {
+        color: $color-text-primary;
+        transition: 0.1s ease;
+        text-decoration: none;
+        font-weight: 600;
+        &:visited {
+          color: $color-text-primary;
+        }
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

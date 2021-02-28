@@ -2,7 +2,6 @@ footer {
   width: 100%;
   background-color: white;
   border-top: solid 1px rgba(0, 0, 0, 0.1);
-
   height: 56px;
   @include media(">=tablet") {
     height: 64px;
