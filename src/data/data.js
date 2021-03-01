@@ -8,6 +8,7 @@ export const headData = {
     author: "Kurt Sigmund de Leon",
     viewport: "width=device-width, initial-scale=1.0",
     url: "https://kurtdeleon.dev/",
+    image: "meta-image.jpg",
   },
 };
 

@@ -25,14 +25,14 @@ const Layout = ({ children }) => {
         <meta property="og:url" content={meta.url} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={meta.description} />
-        <meta property="og:image" content="meta-image.jpg" />
+        <meta property="og:image" content={meta.image} />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={meta.url} />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={meta.description} />
-        <meta property="twitter:image" content="meta-image.jpg" />
+        <meta property="twitter:image" content={meta.image} />
       </Helmet>
       <Header />
       <div id="content-wrapper">{children}</div>
