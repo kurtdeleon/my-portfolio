@@ -1,11 +1,13 @@
 export const headData = {
-  title: "Kurt de Leon",
+  title: "Kurt de Leon | Portfolio ",
   lang: "en",
-  charset: "utf-8",
   meta: {
-    description: "Kurt de Leon's Portfolio",
+    charset: "utf-8",
+    description:
+      "Kurt is a software engineer based in Manila. When he's not busy coding, he enjoys dabbling in user experience and interface design. Take a look at some of his projects!",
     author: "Kurt Sigmund de Leon",
     viewport: "width=device-width, initial-scale=1.0",
+    url: "https://kurtdeleon.dev/",
   },
 };
 
