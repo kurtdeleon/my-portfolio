@@ -3,7 +3,7 @@
   "author": "Kurt de Leon",
   "private": true,
   "description": "A simple portfolio website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
