@@ -18,7 +18,10 @@ const Project = ({ pageContext: { project } }) => {
   return (
     <article className="view-project">
       <section className="project-summary">
-        <Image alt="" filename={`${id}/header.jpg`} />
+        <Image
+          alt={`Header image for ${title}`}
+          filename={`${id}/header.jpg`}
+        />
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
         <p dangerouslySetInnerHTML={{ __html: summary }} />

@@ -7,11 +7,11 @@ const projectsData = [
     subtitle: "Turning a Java App into a PWA",
     tags: ["Web Development", "React"],
     summary:
-      "A progressive web application made with React. The app will be used by hospital staff to schedule the use of facilities, equipment, and human resources. Previous schedules and bookings can also be viewed and edited on the fly.",
+      "A progressive web application made with React. The app will be used by hospital staff to schedule the use of facilities, equipment, and human resources. Scheduled operations can also be viewed and modified as needed.",
     infoList: [
       {
         title: "Technologies",
-        items: ["React", "Java (Spring/Hibernate)", "Apache"],
+        items: ["React", "Java Spring", "MS SQL Server"],
       },
       {
         title: "Roles",
@@ -26,17 +26,17 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "To deal with the growing need for modernized platforms, I was tasked to reconstruct a PWA version of a scheduler program originally run on Java code. Due to time constraints, the API used for the application ran on Spring, which calls and reuses back-end code from the original application.",
+              "To keep up with the growing need for modern applications, I was tasked to reconstruct a Java applet into a PWA. Said application will be running on an API made in Spring, which calls and reuses back-end code from the original application. The purpose of this reconstruction won't be to fully replace the original program (not for now, at least) but to enable nurses and surgeons to schedule operations on tablets and mobile phones.",
           },
           {
             tag: "p",
             content:
-              "At the start of the development, our two-man team decided to make use of React for the project as it seemed to fit the requirements. We also decided to go with a UI framework, which in this case is AntDesign, instead of making an in-house one so that we could get started quickly.",
+              'Before we started development, our two-man team decided to make use of React for the project as it seemed to fit the requirements. We also decided to make use of a UI framework, which in this case is <a class="link" href="https://ant.design/" target="_blank" rel="noreferrer">AntDesign</a>, so that we could create a proof-of-concept as soon as possible.',
           },
           {
             tag: "p",
             content:
-              "For now, I'm only tasked to re-create the most basic functions of the application to start with, and that mostly includes viewing, creating, and editing schedules.",
+              "Since this app will only be an extension of the original program, only the most basic functions will be added for now. This includes creating, viewing, updating, and cancelling booked operations.",
           },
         ],
       },
@@ -46,17 +46,17 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "The first thing we started with is the Dashboard, which contains a calendar that displays schedules depending on the selected date and facility users want to view. Using this calendar, users can drag and drop schedules, as well as resize schedules to manage and adjust timings depending on the need.",
+              "The first thing we started with was the Dashboard, which contains a calendar that displays operations depending on the selected date and the facility users select. Here, users will be able to drag and drop schedules, as well as resize them to manage and adjust timings depending on their need.",
           },
           {
             tag: "p",
             content:
-              "Users are also allowed to click on schedules to open a drop-down menu which contains actions for modifying schedules, such as locking them into place, as well as removing them from the final output.",
+              "Users are also allowed to click on booked operations to open a drop-down menu, which contains modification, such as finalizing their details, as well as cancelling them to temporarily remove them from the calendar view.",
           },
           {
             tag: "img",
             content: "calendar.jpg",
-            alt: "Text",
+            alt: "The main calendar view of the app",
           },
           {
             tag: "p",
@@ -66,30 +66,30 @@ const projectsData = [
           {
             tag: "img",
             content: "open_cancel.png",
-            alt: "Text",
+            alt:
+              "Various features of the app, such as viewing details of operations, and the cancel booking feature",
           },
           {
             tag: "p",
             content:
-              "Lastly, the users can also access a Scheduler Wizard, which allows them to create schedules by querying user data from the back-end. Most of the values on the forms are queried from the API as there are complex rules and conditions that are taken into consideration when querying if human and equipment resources are available or not.",
+              "Lastly, the users can access a Scheduler Wizard, which allows them to create and book operations by querying user data from the back-end. Most of the values on the forms are queried from the API as there are complex rules and conditions that are taken into consideration when querying if human and equipment resources are available or not. An example of this is the availability of a surgeon at a certain time period, which the system doesn't allow to prevent overlapping schedules.",
           },
           {
             tag: "img",
             content: "booking_wizard.jpg",
-            alt: "Text",
+            alt: "Booking Wizard that allows users to schedule operations",
           },
         ],
       },
     ],
   },
-
   {
     id: "talab",
     title: "Talakayang Alay sa Bayan",
     subtitle: "An Enlistment System for the Loyola Schools",
     tags: ["Web Development"],
     summary:
-      "TALAB is a one-day event that required an enlistment and information website to be used by the Loyola Schools student body. This is a joint project of Ateneo's User Experience Society (UXS) and Computer Society of the Ateneo (CompSAt).",
+      "An enlistment system and information website for TALAB, a one-day annual event hosted by the Loyola Schools. This is a joint project of Ateneo's User Experience Society (UXS) and Computer Society of the Ateneo (CompSAt).",
     infoList: [
       {
         title: "Technologies",
@@ -102,7 +102,7 @@ const projectsData = [
     ],
     actions: [
       {
-        url: "https://talab.ateneo.edu/infosite",
+        url: "https://talab.ateneo.edu/",
         text: "View website",
       },
     ],
@@ -113,12 +113,12 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "TALAB is an annual one-day event held by the Ateneo to give its students a platform to learn and contemplate on the pressing issues of today and tomorrow. Lectures are held by various instructors and renowned speakers in their respective fields, and students are given the chance to choose and enlist in whatever classes that piqued their interest.",
+              "TALAB is an annual one-day event held by the Loyola Schools to give its students a platform to learn and contemplate on the pressing issues of today and tomorrow. Lectures are held by various instructors and renowned speakers in their respective fields, and students are given the chance to choose and enlist in whatever classes that piqued their interest.",
           },
           {
             tag: "p",
             content:
-              "Initially, the Ateneo Integrated Student Information System (AISIS), which was used for the enlistment of classes, was planned to be used as the platform for TALAB. Unfortunately, it didn't work out due to unforeseen circumstances. Instead, they employed the help of a group of developers and designers (which I was part of) that could help create an enlistment website for TALAB.",
+              'The <a class="link" href="https://aisis.ateneo.edu/" target="_blank" rel="noreferrer">Ateneo Integrated Student Information System (AISIS)</a>, which is used for the enlistment of classes, was initially planned to be used as the enlistment platform for TALAB. Unfortunately, it didn\'t work out due to unforeseen circumstances. To mitigate the issue, the administrators employed the help of a group of developers and designers (which I was a part of) that could help create an enlistment website for TALAB.',
           },
         ],
       },
@@ -128,22 +128,17 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "Before we started development, we had a co-design session with User Experience Society. The session included brainstorming of ideas on how to make the enlistment site an upgrade from the usual shenanigans AISIS makes students go through.",
-          },
-          {
-            tag: "p",
-            content:
-              "There was also a brief design studio session, where we talked about features and implementations that we wanted to see. Some notable ones include equal distributions of slots across batches, single-click enlistment, and how to properly manage server load. Components of the website were debated on, and critiques had to be exchanged for each designing group.",
+              "Before we started development, we had a co-design session with some membors of the User Experience Society. The session included a brainstorming of ideas on how to make an enlistment website that fixed the problems and annoyances students faced when using AISIS.",
           },
           {
             tag: "img",
             content: "codesign_session.jpg",
-            alt: "Text",
+            alt: "Co-design session between UXS and CompSAt",
           },
           {
             tag: "p",
             content:
-              "I personally think having this session is one of the key reasons why the TALAB enlistment was so successful in the first place.",
+              "There was also a brief design studio session, where we talked about some features and implementations that we wanted to see in the project. Some notable ones included equal distributions of slots across batches, single-click enlistment, and proper management of server load. Components and pages of the website were debated on, and critiques had to be exchanged for each designing group.",
           },
         ],
       },
@@ -153,22 +148,22 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "Once development started, we split ourselves according to what we're most familiar with. I, along with another dev, got the front-end job for the information site. Our main tasks were to create the landing pages, as well as the FAQs and batch number checking page.",
+              "To start off the development, we split ourselves according to what technologies we were most familiar with. I, along with another dev, got the front-end tasks for the information site. Our main goals were to create the landing pages, as well as the FAQs and batch number checking page.",
           },
           {
             tag: "img",
             content: "infosite.png",
-            alt: "Text",
+            alt: "An example of how the information site looked like",
           },
           {
             tag: "p",
             content:
-              "For the succeeding school year (2nd TALAB), we were to maintain the enlistment website, as well as create an admin page. I was also given the extra task of making a to-do list type of app that was used for the registrations of the out-of-school tour classes.",
+              "For the second iteration of TALAB the following year, we were tasked to maintain the enlistment website, as well as create an admin page. I was also given the extra task of making a to-do list type of app that was used for the registrations of the out-of-school tour classes.",
           },
           {
             tag: "img",
             content: "enlistment.jpg",
-            alt: "Text",
+            alt: "A view enlistment website from a guest's perspective",
           },
         ],
       },
@@ -178,7 +173,7 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "Fortunately, the creation of the enlistment sites was a success. People were praising our team, and were even comparing what we made to AISIS. It wasn't perfect as there were a significant amount of students who encountered issues, but it was a good first step towards a better enlistment system for Ateneo.",
+              "Fortunately, the creation of the enlistment system was a success. People were praising our team, and were even comparing what we made to AISIS. It wasn't perfect as there was a significant amount of students who encountered issues, but it was a good first step towards a better enlistment system for the Ateneo student body.",
           },
           {
             tag: "p",
@@ -188,7 +183,7 @@ const projectsData = [
           {
             tag: "img",
             content: "tweets.png",
-            alt: "Text",
+            alt: "Some tweets tweeting praise of our work",
           },
         ],
       },
@@ -200,11 +195,11 @@ const projectsData = [
     subtitle: "A Virtual Reality Psychological Horror Game",
     tags: ["Game Development"],
     summary:
-      "The stigmatization of mental illnesses has existed all throughout the history of humanity, and is still present today. Madman aims to raise awareness of the real nature of schizophrenia by simulating key symptoms of the disorder, such as visual and auditory hallucinations.",
+      "Madman is a psychological horror game that aims to raise awareness of the real nature of schizophrenia by simulating key symptoms of the disorder, such as  hallucinations.",
     infoList: [
       {
         title: "Technologies",
-        items: ["Unity (C++)", "HTC Vive / SteamVR", "Blender"],
+        items: ["Unity (C#)", "HTC Vive / SteamVR", "Blender"],
       },
       {
         title: "Roles",
@@ -217,7 +212,7 @@ const projectsData = [
         text: "View source code",
       },
       {
-        url: "",
+        url: "https://kurtdeleon.dev/MADMAN-Alcantara-deLeon-Jacinto.pdf",
         text: "Read Dissertation",
       },
     ],
@@ -228,17 +223,18 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "Even before I got into programming, horror games have always interested me. So when I did finally formally pick up game development in college as a specialization in my course, I decided that I wanted to make one for my dissertation. Thankfully, I found a group of people that would be interested in doing the same thing.",
+              "Even before I got into programming, horror games have always interested me. So when I did finally formally pick up game development in college as a specialization FOR my course, I decided that I wanted to make one for my dissertation. Thankfully, I found a group of FRIENDS that would be interested in doing the same thing.",
           },
           {
             tag: "p",
             content:
-              'The idea of making the game revolve around symptoms of schizophrenia came later on, when I found out that one of the most vulnerable groups in the country today are people who suffer from mental illnesses. I found it extremely ironic considering that "taong grasa (madmen)" are usually people who are associated with being dangerous. And so our group decided to act on our desire to help by developing this game.',
+              'The idea of making the game revolve around symptoms of schizophrenia came later on, when I found out that one of the most vulnerable groups in the country today are people who suffer from mental illnesses. I found it extremely ironic that the "taong grasa", who are usually people who most think are dangerous, are actually the ones who need help the most. And so our group decided to act on our desire to help by developing this game.',
           },
           {
             tag: "img",
             content: "gate.jpg",
-            alt: "Text",
+            alt:
+              "A picture of the gate, where the player spawns in at the start of the game",
           },
         ],
       },
@@ -248,27 +244,27 @@ const projectsData = [
           {
             tag: "p",
             content:
-              "Our thesis group decided that making the game in VR would be interesting due to the nature of our study. Since we were under the guidance of Ateneo Laboratory for the Learning Sciences (ALLS), we made use of some of their equipment, which included an HTC VIVE and a powerful PC to run our game on. As a framework for the Vive, we were recommended by our instructor to go with SteamVR. As for the game engine, our group went for Unity as it was what we were more familiar with at the time.",
+              "Our thesis group decided that making the game in VR would be interesting due to the nature of our study. Since we were under the guidance of Ateneo Laboratory for the Learning Sciences (ALLS), we made use of some of their equipment, which included an HTC VIVE and a powerful PC to render and run our game on. Madman ran on the Unity game engine, since it was what our group was most familiar with. As a framework for the Vive, we were recommended by our instructor to go with SteamVR.",
           },
           {
             tag: "p",
             content:
-              "The game we agreed on had a fairly simple plot and goal that were both inspired heavily by the popular 2009 game, Slenderman. The users play as a patient with schizophrenia who works as a school janitor. The objective of the game is to fix multiple fuseboxes around the school while dealing with auditory and visual hallucinations.",
+              "The game we agreed on had a fairly simple plot and goal that were heavily inspired by the popular 2009 game, Slenderman. The users get to play as a patient with schizophrenia who works as a school janitor. The objective of the game is to fix multiple fuseboxes around the school while dealing with auditory and visual hallucinations.",
           },
           {
             tag: "img",
             content: "classroom.jpg",
-            alt: "Text",
+            alt: "A classroom, where players could possible find a fusebox in",
           },
           {
             tag: "p",
             content:
-              "The main visual hallucination is depicted as a black entity that follows users around. Whenever the user gets close to this illusion, they experience a variety of camera effects (noise filters, mostly) and their schizophrenia level increases. This, in turn, make the voices in the player's head get louder, more frequent, and more aggressive.",
+              "The main visual hallucination is depicted as a black entity that follows users around. Whenever the user gets close to this illusion, they experience a variety of camera effects (noise filters, mostly) and their schizophrenia level increases. This in turn makes the voices in the player's head, which make them sound louder, more frequent, and more aggressive.",
           },
           {
             tag: "img",
             content: "monster.jpg",
-            alt: "Text",
+            alt: "The main visual hallucination that follows players around",
           },
           {
             tag: "p",
@@ -278,7 +274,7 @@ const projectsData = [
           {
             tag: "img",
             content: "testing.jpg",
-            alt: "Text",
+            alt: "Testing being done at our groupmate's house",
           },
         ],
       },
@@ -293,12 +289,13 @@ const projectsData = [
           {
             tag: "p",
             content:
-              'MADMAN later on was awarded the <a class="link" href="http://penoy.admu.edu.ph/~alls/archives/5794 target="_blank" rel="noreferrer"">2019 SOSE Interlinks People\'s Choice Awards</a>. It was a fun journey!',
+              'MADMAN later on was awarded the <a class="link" href="http://penoy.admu.edu.ph/~alls/archives/5794" target="_blank" rel="noreferrer">2019 SOSE Interlinks People\'s Choice Awards</a>. It was a fun journey!',
           },
           {
             tag: "img",
             content: "peoples_choice_awards.jpg",
-            alt: "Text",
+            alt:
+              "Our group presenting our work to people going around the event",
           },
         ],
       },
@@ -310,7 +307,7 @@ const projectsData = [
     subtitle: "A Minimalist Typing Practice Tool",
     tags: ["Web Development", "React"],
     summary:
-      "A small hobby project directly inspired by 10FastFingers. This simple typing game tests how fast you type and how well you do it. Made with React.",
+      "A small hobby project made with React, and is directly inspired by 10FastFingers. This simple typing game that tests how fast you type and how well you do it.",
     infoList: [
       {
         title: "Technology",
@@ -323,7 +320,7 @@ const projectsData = [
     ],
     actions: [
       {
-        url: "https://react-typr.herokuapp.com/",
+        url: "https://react-typr.netlify.app/",
         text: "View website",
       },
       {
@@ -338,7 +335,7 @@ const projectsData = [
           {
             tag: "p",
             content:
-              'A few months ago, I was looking to hone my React skills by starting a new, small project that makes use of hooks. The idea ended up being a typing practice tool, which was directly inspired by <a class="link" href="https://10fastfingers.com/typing-test/english" target="_blank" rel="noreferrer"/>10FastFingers</a>, a popular typing test.',
+              'A few months ago, I was looking to hone my React skills by starting a new, small project that makes use of hooks. The idea ended up being a typing practice tool, directly inspired by <a class="link" href="https://10fastfingers.com/typing-test/english" target="_blank" rel="noreferrer"/>10FastFingers</a>, a popular typing test website.',
           },
           {
             tag: "p",
@@ -351,14 +348,14 @@ const projectsData = [
               "One thing that I planned on doing to separate my app from 10FastFingers was to make everything look dark and comfy, so everything is easy on the users' eyes. I also opted to display the WPM and Accuracy instead of only displaying it after the minute ends.",
           },
           {
-            tag: "p",
-            content:
-              "The app ended up working fine and looking nice, although I opted to save the users' scores locally for now instead of storing it in a server. It's a project for practice, anyway!",
-          },
-          {
             tag: "img",
             content: "typr.png",
-            alt: "Text",
+            alt: "A screenshot of the main page of Typr",
+          },
+          {
+            tag: "p",
+            content:
+              "The app ended up working fine and looking nice, although I opted to save the users' scores in localStorage for now instead of storing it in a server. Maybe in the future I can create a back-end system for it.",
           },
         ],
       },
@@ -370,7 +367,7 @@ const projectsData = [
     subtitle: "Secure Password Generator",
     tags: ["Web Development", "React"],
     summary:
-      "A straightforward tool to randomly generate strings out of letters, numbers, and symbols. For extra security, this app allows its users to cross-check generated passwords to HaveIBeenPwned's Pwned Passwords database.",
+      "A small, straightforward app that allows users to randomly generate strings out of character sets. For extra security, this tool allows its users to cross-check generated passwords to HaveIBeenPwned's Pwned Passwords database.",
     infoList: [
       {
         title: "Technology",
@@ -383,11 +380,11 @@ const projectsData = [
     ],
     actions: [
       {
-        url: "https://react-typr.herokuapp.com/",
+        url: "https://p4ssw0rd.netlify.app/",
         text: "View website",
       },
       {
-        url: "https://github.com/kurtdeleon/react-typr",
+        url: "https://github.com/kurtdeleon/p4ssw0rd",
         text: "View source code",
       },
     ],
@@ -401,11 +398,6 @@ const projectsData = [
               'My main inspiration for making this small tool was the password generation tool for <a class="link" href="https://keepass.info/" target="_blank" rel="noreferrer">KeePass</a>, which is a secure password safe that I\'ve been using for years now. By choosing for a set of options to build a character set, one was able to generate secure, randomized password. I figured I could make something like this but for the web.',
           },
           {
-            tag: "img",
-            content: "keepass.png",
-            alt: "Text",
-          },
-          {
             tag: "p",
             content:
               'Knowing that there\'s probably countless other password generators currently online, I\'d have to think of something unique that could make my app stand out. The idea that came to mind was to make use of <a class="link" href="https://haveibeenpwned.com/Passwords" target="_blank" rel="noreferrer">HaveIBeenPwned\'s Pwned Passwords database</a>, which could be accessed via their public API. This would allow users to cross-check their newly generated passwords to the database for extra security.',
@@ -413,7 +405,7 @@ const projectsData = [
           {
             tag: "img",
             content: "p4ssw0rd.png",
-            alt: "Text",
+            alt: "A screenshot of p4ssw0rd in action",
           },
           {
             tag: "p",
