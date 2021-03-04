@@ -28,20 +28,10 @@
     }
   }
   &--regular {
-    //mobile
-    padding: 12px 0;
-    //tablet+
-    @include media(">=tablet") {
-      padding: 16px 0;
-    }
+    padding: 16px 0;
   }
   &--small {
-    //mobile
-    padding: 8px 0;
-    //tablet+
-    @include media(">=tablet") {
-      padding: 12px 0;
-    }
+    padding: 12px 0;
   }
 
   //button jumps up when clicked
