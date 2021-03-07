@@ -1,5 +1,9 @@
 const path = require(`path`);
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   plugins: [
     {
@@ -15,6 +19,12 @@ module.exports = {
         name: `data`,
         path: `${__dirname}/src/data/`,
         ignore: [`**/\.*`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GA_TRACKING_ID],
       },
     },
     `gatsby-plugin-sass`,
