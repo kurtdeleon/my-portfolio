@@ -17,9 +17,9 @@ export const introData = {
   pictureMobile: "profile-picture/mobile.jpg",
   greeting: `Hello, I'm Kurt! <span class="waving-hand" role="img">👋</span>`,
   summary: [
-    `I'm a software engineer based in Manila. When I'm not <a class="link" href="https://github.com/kurtdeleon" target="_blank" rel="noreferrer">busy coding</a>, I enjoy dabbling in user experience and interface design. I also love reading books and playing video games on my free time.`,
-    `I recently graduated from Ateneo de Manila University, majoring in BS Computer Science with a specialization in Game Development. I currently work for WorkforceOptimizer as a software engineer. Before that, I interned at Accenture as a web developer.`,
-    `If you're interested in working with me, send me a message over at <a class="link" href="https://ph.linkedin.com/in/kurtdeleon" target="_blank" rel="noreferrer">LinkedIn</a>. You could also send me an <a class="link" href="mailto:deleon.ksa@gmail.com" target="_blank" rel="noreferrer">email</a>, if you'd prefer that.`,
+    `I'm a software engineer based in Manila. When I'm not busy coding, I enjoy dabbling in user experience and interface design. I also love reading books and playing video games in my free time.`,
+    `I recently graduated from Ateneo de Manila University, where I majored in Computer Science with a specialization in Game Development. I'm currently helping build a decentralized application that aims to enable everyone to invest in non-custodial, yield-generating indexes on both Solana and Terra.`,
+    `If you're interested in working with me, send me a message over at <a class="link" href="https://linkedin.com/in/kurtdeleon" target="_blank" rel="noreferrer">LinkedIn</a>. You could also send me an <a class="link" href="mailto:deleon.ksa@gmail.com" target="_blank" rel="noreferrer">email</a>, if you'd prefer that.`,
   ],
   cta: {
     url: "KurtdeLeon_Resume.pdf",
@@ -34,14 +34,10 @@ export const socialMediaData = [
   },
   {
     title: "LinkedIn",
-    url: "https://ph.linkedin.com/in/kurtdeleon",
+    url: "https://linkedin.com/in/kurtdeleon",
   },
   {
     title: "Email",
     url: "mailto:deleon.ksa@gmail.com",
-  },
-  {
-    title: "Facebook",
-    url: "https://facebook.com/0.ksdeleon",
   },
 ];

@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "author": "Kurt de Leon",
   "private": true,
-  "description": "A simple portfolio website",
+  "description": "Kurt de Leon's portfolio website",
   "version": "1.0.0",
   "license": "0BSD",
   "scripts": {
@@ -35,9 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/kurtdeleon/my-portfolio"
   }
 }
